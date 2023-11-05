@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лаба 2</title>
+  </head>
+  <body>
+    <script>
+      const text =
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ea earum incidunt minima nihil. Blanditiis consectetur cumque debitis delectus dolor dolorem dolorum, eos laboriosam, modi nemo, quasi quos sint voluptatibus!";
+      console.log("1)");
+      console.log(text[12] + text[6] + text[18] + text[25]);
+      console.log("2)");
+      console.log(text.toLowerCase());
+      console.log("3)");
+      for (const match of text.matchAll(/in/g)) {
+        console.log(match.index);
+      }
+      console.log("4)");
+      console.log(text.split(" "));
+      console.log("5)");
+      console.log(text.split("").reverse().join(""));
+      console.log("6)");
+      function ucFirst(txt) {
+        let newTxt = txt[0].toUpperCase() + txt.slice(1);
+        return newTxt;
+      }
+      console.log(ucFirst("some text"));
+    </script>
+  </body>
+</html>
